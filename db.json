@@ -1,0 +1,52 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "title": "Create Kanban Board",
+      "description": "Create a Kanban Board using React and Axios",
+      "status": "done"
+    },
+    {
+      "id": 2,
+      "title": "Add Cards",
+      "description": "Add the ability to add cards to the board",
+      "status": "in-dev"
+    },
+    {
+      "id": 3,
+      "title": "Drag and Drop",
+      "description": "Add the ability to drag and drop cards between columns",
+      "status": "in-dev"
+    },
+    {
+      "id": 4,
+      "title": "Edit Cards",
+      "description": "Add the ability to edit existing cards",
+      "status": "todo"
+    },
+    {
+      "id": 5,
+      "title": "Delete Cards",
+      "description": "Add the ability to delete cards",
+      "status": "done"
+    },
+    {
+      "title": "create something i like",
+      "description": "adadeh",
+      "status": "in-dev",
+      "id": 6
+    },
+    {
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "status": "todo",
+      "id": 7
+    },
+    {
+      "title": "Make a big time on saturday",
+      "description": "going to cinema with gf",
+      "status": "todo",
+      "id": 8
+    }
+  ]
+}
