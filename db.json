@@ -16,7 +16,7 @@
       "id": 3,
       "title": "Drag and Drop",
       "description": "Add the ability to drag and drop cards between columns",
-      "status": "in-dev"
+      "status": "done"
     },
     {
       "id": 4,
@@ -28,7 +28,7 @@
       "id": 5,
       "title": "Delete Cards",
       "description": "Add the ability to delete cards",
-      "status": "done"
+      "status": "in-dev"
     },
     {
       "title": "create something i like",

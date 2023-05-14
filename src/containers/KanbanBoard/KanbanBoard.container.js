@@ -72,37 +72,35 @@ const KanbanBoard = () => {
     <div>
       {isLoading && <Loading />}
       {!isLoading && (
-        <>
+        <div className={styles.boardContainer}>
           <button className={styles.addButton} onClick={handleShowModal}>
             Add Task
           </button>
-          <div className={styles.boardContainer}>
-            <div className={styles.board}>
-              <div className={styles.col}>
-                <h2 className="text-center">To Do </h2>
-                {renderCards("todo")}
-              </div>
-              <div className={styles.col}>
-                <h2 className="text-center">In Development </h2>
-                {renderCards("in-dev")}
-              </div>
-              <div className={styles.col}>
-                <h2 className="text-center">Done </h2>
-                {renderCards("done")}
-              </div>
+          {showModal && (
+            <ModalForm
+              onClose={handleCloseModal}
+              selectedCategory={selectedCategory}
+              onAddCard={(newCard) => {
+                setCards([...cards, newCard]);
+                handleCloseModal();
+              }}
+            />
+          )}
+          <div className={styles.board}>
+            <div className={styles.col}>
+              <h2 className="text-center">To Do</h2>
+              {renderCards("todo")}
             </div>
-            {showModal && (
-              <ModalForm
-                onClose={handleCloseModal}
-                selectedCategory={selectedCategory}
-                onAddCard={(newCard) => {
-                  setCards([...cards, newCard]);
-                  handleCloseModal();
-                }}
-              />
-            )}
+            <div className={styles.col}>
+              <h2 className="text-center">In Development</h2>
+              {renderCards("in-dev")}
+            </div>
+            <div className={styles.col}>
+              <h2 className="text-center">Done</h2>
+              {renderCards("done")}
+            </div>
           </div>
-        </>
+        </div>
       )}
       {error && <div>Error: {error.message}</div>}
     </div>

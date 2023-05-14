@@ -1,13 +1,12 @@
 .boardContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:flex-end;
   justify-content: center;
   margin: 0 auto;
   max-width: 1200px;
   margin-top: 2em;
 }
-
 .board {
   display: flex;
   justify-content: space-between;
@@ -15,7 +14,7 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  margin-top: 3em;
+  margin-bottom: 20px;
 }
 
 .col {
@@ -35,21 +34,22 @@
 }
 
 .addButton {
-  background-color: #007bff;
-  border: none;
+  background-color: transparent;
+  border: 1px solid #666;
   border-radius: 5px;
-  color: #fff;
+  color: #000000;
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding: 10px 20px;
   transition: background-color 0.3s ease;
-  float: right;
-  margin-right: 2em;
+  margin-right: 10px;
 }
 
 .addButton:hover {
-  background-color: #0062cc;
+  background-color: #0047ba;
+  border: none;
+  color: #fff;
   cursor: pointer;
 }
 
